@@ -1,0 +1,8 @@
+\build
+*.pbxuser
+*.perspectivev3
+.DS_Store
+*.swp
+~.nib
+*.perspective
+*.mode1v3

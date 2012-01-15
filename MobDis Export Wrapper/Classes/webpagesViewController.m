@@ -58,6 +58,9 @@
         finalURL = [ finalURL stringByReplacingOccurrencesOfString:@"browser://" withString:@"http://"];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:finalURL]];
         return NO;
+    }else if ([[[r URL]absoluteString] hasPrefix:@"http://maps.google.com"]) {
+        [[UIApplication sharedApplication] openURL:[r URL]];
+        return NO;
     }    
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     return YES;

@@ -53,6 +53,11 @@
         return NO;
     }else{  
         return YES;
+    }else if ([[[r URL]absoluteString] hasPrefix:@"browser://"]) {//next time can command to launch browser
+        NSString* finalURL=[NSString stringWithString:[[r URL] absoluteString]];
+        finalURL = [ finalURL stringByReplacingOccurrencesOfString:@"browser://" withString:@"http://"];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:finalURL]];
+        return NO;
     }    
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     return YES;

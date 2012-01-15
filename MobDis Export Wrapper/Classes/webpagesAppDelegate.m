@@ -19,7 +19,7 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    [application setStatusBarHidden:YES];
+    //[application setStatusBarHidden:YES];
     // Override point for customization after application launch.
 	///webpagesViewController *new=[[webpagesViewController alloc]initWithString:@"http://www.google.com"];
     // Add the view controller's view to the window and display.

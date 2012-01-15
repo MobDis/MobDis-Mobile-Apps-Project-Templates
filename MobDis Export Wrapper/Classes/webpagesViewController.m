@@ -54,6 +54,8 @@
     }else{  
         return YES;
     }    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    return YES;
 		
 		
 	
@@ -61,6 +63,7 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
 	CannotGoin=NO;
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 
 
 }

@@ -46,8 +46,8 @@
 }
 - (BOOL)webView:(UIWebView *)w shouldStartLoadWithRequest:(NSURLRequest *)r navigationType:(UIWebViewNavigationType)navigationType
 {
-	NSLog(@"%@",[r URL]);
     if ([[[r URL]absoluteString] hasPrefix:@"http"]){
+    DLog(@"%@",[r URL]);
         [[UIApplication sharedApplication] openURL:[r URL]];
 
         return NO;

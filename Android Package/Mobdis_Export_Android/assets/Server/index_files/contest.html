@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/style.css?v=2">
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" />
+	<link rel="stylesheet/less" type="text/css" href="css/layout.less">
+	<script src="js/libs/jquery-1.6.4.min.js"></script>
+	<script src="js/libs/jquery.mobile-1.0.min.js"></script>
+	<script src="js/libs/less-1.1.3.min.js"></script>
+	<script type='text/javascript'>
+	function closeDialog(callback){
+		$('#infoBox').css('display','none');
+		if(callback){
+			callback();
+		}
+	}
+
+	function showDialog(callback){
+		$('#infoBox').css('display','block');
+		if(callback){
+				callback();
+		}
+	}
+
+	$('#contestPage').live('pageinit',function(){
+		$('#submit-message').click(function(){
+			if($('textarea').val().length){
+				showDialog();
+			}
+			else {
+				alert("Please input a message");
+			}
+		})	
+		$('#submit-info').click(function(){
+			if($('#username').val().length && $('#nric').val().length && $('#contact').val().length){
+
+				//execute submit post action
+				var message = $('textarea').val();
+				var name = $('#username').val();
+				var nric = $('#nric').val();
+				var contact = $('#content').val();
+			}
+			else {
+				alert("Please complete the form");
+			}
+		})	
+		$('#cancel-info').click(function(){
+			closeDialog(function(){
+				$('#infoBox input').val('');
+			})
+		})
+	})
+	</script>
+
+</head>
+<body>
+	<div id="contestPage" data-role="page" class="ui-page-active"> 
+		<div id="content" data-role="content">
+			<h2>I love Watertown because</h2>
+			<textarea placeholder="Type something here...."></textarea>
+			<a href="#infoBox" id="submit-message" data-role="button">Submit</a>
+			<ul>
+				<li>
+					<p class="profilePic"><img src="http://gfx.fotocommunity.com/ram/gfx/profile/profile_m.gif"/></p>
+					<div class="profileDetail"><div class="top"><span class="name">John</span><p class="like">0 <span>Like</span></p></div><p>I love watertown because asdasdasdadasdqweqweq eqw qwe qwe q </p></div>
+				</li>
+				<li>
+					<p class="profilePic"><img src="http://gfx.fotocommunity.com/ram/gfx/profile/profile_m.gif"/></p>
+					<div class="profileDetail"><div class="top"><span class="name">John</span><p class="like">0 <span>Like</span></p></div><p>I love watertown because asdasdasdadasdqweqweq eqw qwe qwe q </p></div>
+				</li>
+				<li>
+					<p class="profilePic"><img src="http://gfx.fotocommunity.com/ram/gfx/profile/profile_m.gif"/></p>
+					<div class="profileDetail"><div class="top"><span class="name">John</span><p class="like">0 <span>Like</span></p></div><p>I love watertown because asdasdasdadasdqweqweq eqw qwe qwe q </p></div>
+				</li>
+				<li>
+					<p class="profilePic"><img src="http://gfx.fotocommunity.com/ram/gfx/profile/profile_m.gif"/></p>
+					<div class="profileDetail"><div class="top"><span class="name">John</span><p class="like">0 <span>Like</span></p></div><p>I love watertown because asdasdasdadasdqweqweq eqw qwe qwe q </p></div>
+				</li>
+			</ul>
+
+			<div id="infoBox">
+				<div id="infoBoxContent">
+					<form>
+					<label for="username">Name:</label>
+					<input type="text" name="username" id="username" value="" placeholder="Name"/>
+					<label for="nric">NRIC:</label>
+					<input type="text" name="nric" id="nric" value="" placeholder="NRIC"/>
+					<label for="contact">Contact:</label>
+					<input type="text" name="contact" id="contact" value="" placeholder="Contact"/>
+					<a href="#infoBox" id="submit-info" data-role="button">Submit</a>
+					<a href="#infoBox" id="cancel-info" data-role="button">Cancel</a>
+					</form>
+				</div>
+			</div> 
+		</div> 
+	</div>
+
+
+
+</body>
+</html>

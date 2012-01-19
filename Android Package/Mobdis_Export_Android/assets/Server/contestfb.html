@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Watertown</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/style.css?v=2">
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<script src="js/libs/jquery-1.6.4.min.js"></script>
+	<script src="js/libs/jquery.mobile-1.0.min.js"></script>
+	<script src="js/jsr_class.js"></script>
+	<script src="js/common.js"></script>
+	<script type='text/javascript'>
+
+	var app = appObj();
+
+	function bork(data)
+	{
+	  var str = "";
+	  for(var i = 0; i < data.length;i++){
+	  	str += '<li>'+
+				'<p class="profilePic"><img src="'+data[i].avatar+'"/></p>'+
+				'<div class="profileDetail"><div class="top"><span class="name">'+data[i].name+'</span><p class="like">'+data[i].count+' <span>Like</span></p></div><p>'+data[i].message+'</p></div>' +
+			  '</li>';
+		
+	  };
+	  $('#contestPage ul').html(str);
+	}
+
+
+	$('#contestPage').live('pageinit',function(){
+		app.loadEvents();
+		addScript('http://app.ilovewatertown.com.sg/fpost');
+	})
+
+	</script>
+
+</head>
+<body>
+	<div id="contestPage" data-role="page" class="ui-page-active"> 
+		<div id="content" data-role="content">
+			<img src="images/ilovewatertownlogo2.png" width="165" height="34"><span style="color: #35467a;font-weight: bold;font-size: 20px;"> because...</span>
+			<p>
+            <textarea placeholder="Type something here...."></textarea>
+			<a href="#infoBox" id="submit-message" data-role="button">Submit</a>
+            
+            <h3>Tell us why you love Watertown and stand to win an iPad 2!</h3></br>
+			<h3>How to join?
+            <p>1. Like Watertown Facebook Page
+			<p>2. Then creatively complete the sentence “I love Watertown because…”
+			<p>3. The entry will be posted on your wall and Watertown Facebook Page. Get your friends to “Like” your entry on Watertown Facebook page.
+
+			</br>Entry with the most “Likes” win!
+			*Terms & Conditions Apply
+</h3>
+
+            
+            
+            <ul>
+				<li>
+					<p class="profilePic"><img src="http://gfx.fotocommunity.com/ram/gfx/profile/profile_m.gif"/></p>
+					<div class="profileDetail"><div class="top"><span class="name">John</span><p class="like">0 <span>Like</span></p></div><p>I love watertown because asdasdasdadasdqweqweq eqw qwe qwe q </p></div>
+				</li>
+				<li>
+					<p class="profilePic"><img src="http://gfx.fotocommunity.com/ram/gfx/profile/profile_m.gif"/></p>
+					<div class="profileDetail"><div class="top"><span class="name">John</span><p class="like">0 <span>Like</span></p></div><p>I love watertown because asdasdasdadasdqweqweq eqw qwe qwe q </p></div>
+				</li>
+				<li>
+					<p class="profilePic"><img src="http://gfx.fotocommunity.com/ram/gfx/profile/profile_m.gif"/></p>
+					<div class="profileDetail"><div class="top"><span class="name">John</span><p class="like">0 <span>Like</span></p></div><p>I love watertown because asdasdasdadasdqweqweq eqw qwe qwe q </p></div>
+				</li>
+				<li>
+					<p class="profilePic"><img src="http://gfx.fotocommunity.com/ram/gfx/profile/profile_m.gif"/></p>
+					<div class="profileDetail"><div class="top"><span class="name">John</span><p class="like">0 <span>Like</span></p></div><p>I love watertown because asdasdasdadasdqweqweq eqw qwe qwe q </p></div>
+				</li>
+			</ul>
+
+			<div id="infoBox">
+				<div id="infoBoxContent">
+					<form id="hidden-submit" action="http://app.ilovewatertown.com.sg/fpost" method="post">
+					<input style="display:none" type="text" name="fpost[content]" id="contentMessage" value=""/>
+					<label for="name">Name:</label>
+					<input type="text" name="fpost[name]" id="username" value="" placeholder="Name"/>
+					<label for="nric">NRIC:</label>
+					<input type="text" name="fpost[nric]" id="nric" value="" placeholder="NRIC"/>
+					<label for="contact">Contact:</label>
+					<input type="text" name="fpost[contact]" id="contact" value="" placeholder="Contact"/>
+					<input type="checkbox" name="checkbox-1" id="checkbox-0" class="custom" /><label for="checkbox-0">I agree with the following <a id="term" href="#">terms and condition</a></label>
+					<a href="#infoBox" id="submit-info" data-role="button">Submit</a>
+					<a href="#infoBox" id="cancel-info" data-role="button">Cancel</a>
+					</form>
+
+					<div id="termBox">
+						<h2>Terms and Conditions governing the I love Watertown Contest on Facebook and Weibo</h2> <a id="closeTerm" href="#">Close</a>
+						<span>Prizes
+A total of two iPad 2(s) to be won by 2 winners during the Promotional Period  between 17 January 2012 00:00 hrs to 29th February 2012. 23:59 hrs (SG time).
+Terms and Conditions
+The I love Watertown Contest on Facebook and Weibo is open to all (except employees of Far East Property Sales Pte Ltd (“Far East”) and/or any advertising or web agencies who are directly connected with this contest who shall not be eligible to participate in this contest).
+
+To participate in the contest on Facebook, participant(s) are required to “Like” Watertown Facebook Page (http://www.facebook.com/WatertownPunggol) then creatively complete the sentence “I love Watertown because…” The entry will be posted on both the participant(s)’s wall and the Watertown Facebook page. Participant(s) will need to get as many friends and Facebook users as possible, to “Like” his/her entry on the Watertown Facebook page at http://www.facebook.com/WatertownPunggol  between 17 January 2012 00:00 hrs to 29th February 2012. 23:59 hrs (SG time). The entry with the most “Likes” wins an iPad 2. 
+
+To participate in the contest on Weibo, participant(s) are required to “Follow” FEO corporate account in Weibo (http://weibo.com/2641107004) then creatively complete the sentence “我爱水之都因为….” This message will be reflected on both the participant(s)’ Weibo page and also FEO corporate account page on Weibo. Participant(s) will need to get as many friends and Weibo users as possible, to “retweet” the message between 17 January 2012 00:00 hrs to 29th February 2012. 23:59 hrs (SG time). The participant with the most “retweets” win an iPad 2.
+
+Participant(s) are eligible to participate in only 1 contest, either on Facebook or Weibo. Far East reserves the right to disqualify any entry that does not comply with the eligibility criteria.
+
+Anyone who has committed any act or made any statement or behaved in any manner, which may, in Far East Property's sole discretion, bring into disrepute Far East’s name or reputation, will not be eligible to participate in this contest.
+
+Ineligible participants shall be disqualified from participation, irrespective of whether they had already submitted their entry or otherwise.
+
+Only 1 prize per participant (NRIC/Passport) will be awarded based on the eligibility criteria.
+
+Winner(s) will be announced on Watertown Facebook Page   (http://www.facebook.com/WatertownPunggol) and the FEO corporate account on Weibo on 7 March 2012, 12:00 hrs (SG time).
+
+Winner(s) are to collect their prize(s) personally either at the Watertown sales gallery in Singapore or Far East Property Sales office in China.  Far East may arrange for prize(s) to be couriered to winners under special circumstances. Failure to collect the prize within the time or in the manner stated may result in disqualification and selection of an alternate winner(s).
+
+Prize(s) are non-transferable, non-exchangeable and subject to the terms and conditions accompanying them (if any). Far East reserves the right to substitute the prize(s) with any other item of similar value at any time without notice or reason. 
+
+If Far East subsequently determines that a person is not eligible for the prize, for any reason whatsoever, Far East may at its’ discretion reclaim the prize and award it to such person(s) or deal with it in any manner as it deems fit.
+
+Far East shall not assume any responsibility or liability for (i) any incorrect or inaccurate entry form information or (ii) any technical malfunction, failure, error, omission, interruption, deletion, defect, delay in operation or communications line failure, regardless of cause, with regard to any systems, networks, lines, satellites, servers, computers or providers utilized in any aspect of the submission of an entry or operation of the contest, (iii) inaccessibility or unavailability of the internet or (iv) the quality, merchantability or the fitness for any purpose or any other aspect of the prize(s) or (v)  any defect or malfunction in any prize and/or (vi) any loss, injury, damage or harm to persons or property associated or sustained in connection with the participation in any and all aspects of the contest, including accessing the contest, submitting an entry, the receipt, ownership or use of any prize by any person.  Each prize winner bears all risk of loss or damage to his or applicable prize after it has been delivered.
+
+Far East’s decision on all matters relating to this contest shall be final and Far East shall not be obliged to enter into any correspondence with any participant on any matter relating to this contest.
+
+Far East may at any time discontinue this contest, vary any of these Terms and Conditions, disqualify any participant and/or withdraw any award without notice or reason.
+
+Far East reserves the right to publish the names of people who have redeemed the prizes and other necessary details for the purpose of announcing the names of people who have redeemed the prizes on the Far East Organization website.
+
+Entry into this contest constitutes the participant’s acceptance of these Terms and Conditions.
+
+These Terms and Conditions shall be governed by Singapore laws and participants shall submit to the exclusive jurisdiction of Singapore courts.
+
+Participants shoule be at least 13 years old toenter into this Contest</span>
+					</div>
+				</div>
+				
+			</div> 
+		</div> 
+	</div>
+
+
+
+</body>
+</html>

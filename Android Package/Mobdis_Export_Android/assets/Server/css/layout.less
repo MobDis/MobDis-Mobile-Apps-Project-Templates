@@ -1,0 +1,271 @@
+.ui-navbar{
+	.ui-btn{
+		height:41px;
+
+		span{
+			border:none;
+			padding:0 !important;
+		}
+	}
+
+	img {
+		height:100%;
+	}
+
+	#info {
+		 
+	}
+}
+
+.ui-header {
+	h1 {
+		padding:0 !important;
+		margin:0 !important;
+		height:37px;
+
+		img {
+			width:100%;
+		}
+	}
+}
+
+.table{
+	width: 100%;
+	height: 100%;
+	display:table;
+}
+
+.tablecell {
+	display:table-cell;
+	vertical-align:middle;
+}
+
+#lang {
+	.bg {
+		position:;
+	}
+
+	.ui-content {
+		position:relative;
+		height:402px;
+	}
+
+	#langSelect{
+		position: absolute;
+		top: 0;
+		left: 0;
+		.table;
+		
+		.tablecell-wrapper{
+			margin:0 auto;
+			width:235px;
+
+			img{
+				width:100%;
+			}
+		}
+
+		#engLang {
+			background: url('../images/splash/bt_eng.png') no-repeat;
+		}
+
+		#chiLang {
+			background: url('../images/splash/bt_chi.png') no-repeat;
+		}
+
+		.langStyle {
+			width: 117px;
+			height: 101px;
+			background-size: 100% 200%;
+			float:left;
+		}
+	}
+}
+
+#contestPage #content{
+
+	position:relative;
+
+	h2{
+		color:#35467a;
+		margin-bottom:10px;
+		font-size:20px;
+	}
+
+	ul{
+		list-style:none;
+		background:#fff;
+		border-radius:10px;
+		box-shadow:0 0 10px rgba(0,0,0,0.5);
+		margin:25px 0 0;
+	}
+
+	li{
+		overflow:hidden;
+		border-bottom:1px solid grey;
+		padding:5px 5px 10px;
+
+		&:last-child{
+			border:none;
+		}
+	}
+
+	textarea{
+		background:white;
+	}
+
+	.ui-btn {
+		margin-right:0;
+		margin-left:0;
+		margin-top:0.8em;
+		width:100%;
+		border:none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(2,167,222)),
+			color-stop(1, rgb(4,201,255))
+		);
+
+		span {
+			color: white;
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	#cancel-info{
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(154,154,154)),
+			color-stop(1, rgb(197,195,195))
+		);
+	}
+
+	.profilePic{
+		width:50px;
+		float:left;
+		margin-right:5px;
+		img{
+			width:100%;
+		}
+	}
+
+	.profileDetail {
+		padding-left:55px;
+
+		.top {
+
+		}
+
+		.name {
+			font-weight:bold;
+		}
+
+		.like {
+			float:right;
+
+			span{
+				background:url('../images/like.png') no-repeat;
+				text-indent:-99999px;
+				height:15px;
+				width:15px;
+				display:inline-block;
+				background-size:15px 15px;
+			}
+		}
+	}
+
+	#infoBox{
+		display:none;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:9999;
+		width:100%;
+		height:100%;
+		background:rgba(0,0,0,0.4);
+
+		#infoBoxContent{
+			position:absolute;
+			top:40px;
+			left:10px;
+			right:10px;
+			z-index:99999;
+			background:rgba(0,0,0,0.8);
+			padding:10px;
+			border-radius:10px;
+		}
+
+		label {
+			color:white;
+			text-shadow:0 -1px 0 black;
+			margin-left:10px;
+			font-weight:bold;
+		}
+
+		input {
+			margin-bottom:10px;
+			width:90%;
+			margin:0 auto 10px;
+		}
+
+		.ui-btn{
+			margin: 20px auto 10px;
+			border: none;
+			width:95%;
+		}
+
+		#cancel-info{
+			margin-top:0px;
+		}
+	}
+
+	.ui-checkbox {
+		#checkbox-0{
+			opacity:0;
+		}
+
+		.ui-btn{
+			background:none;
+		}
+
+		.ui-btn-inner{
+			border:none;
+			box-shadow:none;
+		}
+
+		label{
+			margin:0;
+		}
+
+	}
+
+	.ui-icon-checkbox-off{
+		background:white;
+	}
+
+	#termBox{
+		display:none;
+		color:#fff;
+		text-shadow:0 -1px 0 #000;
+
+		h2{
+			float:left;
+		}
+
+		#closeTerm {
+			float:right;
+			color:white;
+		}
+
+		span {
+			display: block;
+			margin-top: 20px;
+			clear: both;
+		}
+	}
+}

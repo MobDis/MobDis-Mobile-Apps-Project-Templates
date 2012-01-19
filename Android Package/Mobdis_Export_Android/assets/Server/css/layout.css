@@ -1,0 +1,200 @@
+.ui-navbar .ui-btn {
+  height: 41px;
+}
+.ui-navbar .ui-btn span {
+  border: none;
+  padding: 0 !important;
+}
+.ui-navbar img {
+  height: 100%;
+}
+.ui-header h1 {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 37px;
+}
+.ui-header h1 img {
+  width: 100%;
+}
+.table {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.tablecell {
+  display: table-cell;
+  vertical-align: middle;
+}
+#lang .bg {
+  position: ;
+}
+#lang .ui-content {
+  position: relative;
+  height: 402px;
+}
+#lang #langSelect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+#lang #langSelect .tablecell-wrapper {
+  margin: 0 auto;
+  width: 235px;
+}
+#lang #langSelect .tablecell-wrapper img {
+  width: 100%;
+}
+#lang #langSelect #engLang {
+  background: url('../images/splash/bt_eng.png') no-repeat;
+}
+#lang #langSelect #chiLang {
+  background: url('../images/splash/bt_chi.png') no-repeat;
+}
+#lang #langSelect .langStyle {
+  width: 117px;
+  height: 101px;
+  background-size: 100% 200%;
+  float: left;
+}
+#contestPage #content {
+  position: relative;
+}
+#contestPage #content h2 {
+  color: #35467a;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#contestPage #content ul {
+  list-style: none;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 25px 0 0;
+}
+#contestPage #content li {
+  overflow: hidden;
+  border-bottom: 1px solid grey;
+  padding: 5px 5px 10px;
+}
+#contestPage #content li:last-child {
+  border: none;
+}
+#contestPage #content textarea {
+  background: white;
+}
+#contestPage #content .ui-btn {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0.8em;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #02a7de), color-stop(1, #04c9ff));
+}
+#contestPage #content .ui-btn span {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+#contestPage #content #cancel-info {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #9a9a9a), color-stop(1, #c5c3c3));
+}
+#contestPage #content .profilePic {
+  width: 50px;
+  float: left;
+  margin-right: 5px;
+}
+#contestPage #content .profilePic img {
+  width: 100%;
+}
+#contestPage #content .profileDetail {
+  padding-left: 55px;
+}
+#contestPage #content .profileDetail .name {
+  font-weight: bold;
+}
+#contestPage #content .profileDetail .like {
+  float: right;
+}
+#contestPage #content .profileDetail .like span {
+  background: url('../images/like.png') no-repeat;
+  text-indent: -99999px;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  background-size: 15px 15px;
+}
+#contestPage #content #infoBox {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+#contestPage #content #infoBox #infoBoxContent {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  right: 10px;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+}
+#contestPage #content #infoBox label {
+  color: white;
+  text-shadow: 0 -1px 0 black;
+  margin-left: 10px;
+  font-weight: bold;
+}
+#contestPage #content #infoBox input {
+  margin-bottom: 10px;
+  width: 90%;
+  margin: 0 auto 10px;
+}
+#contestPage #content #infoBox .ui-btn {
+  margin: 20px auto 10px;
+  border: none;
+  width: 95%;
+}
+#contestPage #content #infoBox #cancel-info {
+  margin-top: 0px;
+}
+#contestPage #content .ui-checkbox #checkbox-0 {
+  opacity: 0;
+}
+#contestPage #content .ui-checkbox .ui-btn {
+  background: none;
+}
+#contestPage #content .ui-checkbox .ui-btn-inner {
+  border: none;
+  box-shadow: none;
+}
+#contestPage #content .ui-checkbox label {
+  margin: 0;
+}
+#contestPage #content .ui-icon-checkbox-off {
+  background: white;
+}
+#contestPage #content #termBox {
+  display: none;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000000;
+}
+#contestPage #content #termBox h2 {
+  float: left;
+}
+#contestPage #content #termBox #closeTerm {
+  float: right;
+  color: white;
+}
+#contestPage #content #termBox span {
+  display: block;
+  margin-top: 20px;
+  clear: both;
+}

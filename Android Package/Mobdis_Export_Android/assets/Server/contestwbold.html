@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="no-js ui-mobile" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- base href="http://ilovewatertown.com.sg/contestwb.html" -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Watertown</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="contestwb_files/style.css">
+	<link rel="stylesheet" href="contestwb_files/jquery.css">
+	<link rel="stylesheet/less" type="text/css" href="http://ilovewatertown.com.sg/css/layout.less">
+	<script src="contestwb_files/jquery-1.js"></script>
+	<script src="contestwb_files/jquery.js"></script>
+	<script src="contestwb_files/less-1.js"></script><style id="less:css-layout" media="screen" type="text/css">.ui-navbar .ui-btn {
+  height: 41px;
+}
+.ui-navbar .ui-btn span {
+  border: none;
+  padding: 0 !important;
+}
+.ui-navbar img {
+  height: 100%;
+}
+.ui-header h1 {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 37px;
+}
+.ui-header h1 img {
+  width: 100%;
+}
+.table {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.tablecell {
+  display: table-cell;
+  vertical-align: middle;
+}
+#lang .bg {
+  height: 100%;
+}
+#lang .ui-content {
+  position: relative;
+  height: 417px;
+}
+#lang #langSelect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+#lang #langSelect .tablecell-wrapper {
+  margin: 0 auto;
+  width: 235px;
+}
+#lang #langSelect .tablecell-wrapper img {
+  width: 100%;
+}
+#lang #langSelect #engLang {
+  background: url('http://ilovewatertown.com.sg/css/../images/splash/bt_eng.png') no-repeat;
+}
+#lang #langSelect #chiLang {
+  background: url('http://ilovewatertown.com.sg/css/../images/splash/bt_chi.png') no-repeat;
+}
+#lang #langSelect .langStyle {
+  width: 117px;
+  height: 101px;
+  background-size: 100% 200%;
+  float: left;
+}
+#contestPage #content {
+  position: relative;
+}
+#contestPage #content h2 {
+  color: #35467a;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#contestPage #content ul {
+  list-style: none;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 25px 0 0;
+}
+#contestPage #content li {
+  overflow: hidden;
+  border-bottom: 1px solid grey;
+  padding: 5px 5px 10px;
+}
+#contestPage #content li:last-child {
+  border: none;
+}
+#contestPage #content textarea {
+  background: white;
+}
+#contestPage #content .ui-btn {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0.8em;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #02a7de), color-stop(1, #04c9ff));
+}
+#contestPage #content .ui-btn span {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+#contestPage #content #cancel-info {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #9a9a9a), color-stop(1, #c5c3c3));
+}
+#contestPage #content .profilePic {
+  width: 50px;
+  float: left;
+  margin-right: 5px;
+}
+#contestPage #content .profilePic img {
+  width: 100%;
+}
+#contestPage #content .profileDetail {
+  padding-left: 55px;
+}
+#contestPage #content .profileDetail .name {
+  font-weight: bold;
+}
+#contestPage #content .profileDetail .like {
+  float: right;
+}
+#contestPage #content .profileDetail .like span {
+  background: url('http://ilovewatertown.com.sg/css/../images/like.png') no-repeat;
+  text-indent: -99999px;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  background-size: 15px 15px;
+}
+#contestPage #content #infoBox {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+#contestPage #content #infoBox #infoBoxContent {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  right: 10px;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+}
+#contestPage #content #infoBox label {
+  color: white;
+  text-shadow: 0 -1px 0 black;
+  margin-left: 10px;
+  font-weight: bold;
+}
+#contestPage #content #infoBox input {
+  margin-bottom: 10px;
+  width: 90%;
+  margin: 0 auto 10px;
+}
+#contestPage #content #infoBox .ui-btn {
+  margin: 20px auto 10px;
+  border: none;
+  width: 95%;
+}
+#contestPage #content #infoBox #cancel-info {
+  margin-top: 0px;
+}
+#contestPage #content .ui-checkbox #checkbox-0 {
+  opacity: 0;
+}
+#contestPage #content .ui-checkbox .ui-btn {
+  background: none;
+}
+#contestPage #content .ui-checkbox .ui-btn-inner {
+  border: none;
+  box-shadow: none;
+}
+#contestPage #content .ui-checkbox label {
+  margin: 0;
+}
+#contestPage #content .ui-icon-checkbox-off {
+  background: white;
+}
+#contestPage #content #termBox {
+  display: none;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000000;
+}
+#contestPage #content #termBox h2 {
+  float: left;
+}
+#contestPage #content #termBox #closeTerm {
+  float: right;
+  color: white;
+}
+#contestPage #content #termBox span {
+  display: block;
+  margin-top: 20px;
+  clear: both;
+}
+</style>
+	<script src="contestwb_files/jsr_class.js"></script>
+	<script src="contestwb_files/common.js"></script>
+	<script type="text/javascript">
+
+	var app = appObj();
+
+	function bork(data)
+	{
+	  var str = "";
+	  for(var i = 0; i < data.length;i++){
+	  	str += '<li>'+
+				'<p class="profilePic"><img src="'+data[i].avatar+'"/></p>'+
+				'<div class="profileDetail"><div class="top"><span class="name">'+data[i].name+'</span></div><p>'+data[i].message+'</p></div>' +
+			  '</li>';
+		
+	  };
+	  $('#contestPage ul').html(str);
+	}//end bork
+
+	$('#contestPage').live('pageinit',function(){
+		app.loadEvents();
+
+		addScript('http://app.ilovewatertown.com.sg/wpost');
+	})
+	</script>
+
+<script id="YJscriptId1" src="contestwb_files/wpost.html" type="text/javascript"></script></head>
+<body class="ui-mobile-viewport">
+	<div style="min-height: 833px;" tabindex="0" data-url="contestPage" id="contestPage" data-role="page" class="ui-page-active ui-page ui-body-c"> 
+		<div role="main" class="ui-content" id="content" data-role="content">
+						<h2>我爱水之都，因为…</h2>
+			<textarea class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" placeholder="请输入句子...."></textarea>
+			<a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-c" data-theme="c" href="#infoBox" id="submit-message" data-role="button"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">提交</span></span></a>
+            <h3>告诉我们您为什么喜欢“水之都”这个项目，将有机会赢取全新IPAD 2！</h3><br>
+			<h3>活动规则：
+            <p>1)      发挥创意，完成“我爱水之都，因为____”，将您的创意上传至微博并@新加坡远东房产销售
+			</p><p>2)      成为@新加坡远东房产销售的粉丝 
+			</p><p>3)      快快通知您的朋友，让他们转发您的这条创意微博，被转发次数最多的微博用户将赢取一台IPAD 2</p></h3><br>
+
+			<h3>温馨提醒：上传您创意时记得要@新加坡远东房产销售哦，这样我们才知道您参与了我们此次活动
+
+*附带条件条款</h3>
+			<ul><li><p class="profilePic"><img src="contestwb_files/1.gif"></p><div class="profileDetail"><div class="top"><span class="name">kane_chin</span></div><p>I love Watertown because Ijj</p></div></li><li><p class="profilePic"><img src="contestwb_files/1.gif"></p><div class="profileDetail"><div class="top"><span class="name">kane_chin</span></div><p>I love Watertown because Jsns</p></div></li><li><p class="profilePic"><img src="contestwb_files/1.gif"></p><div class="profileDetail"><div class="top"><span class="name">kane_chin</span></div><p>I love Watertown because ahaha cool</p></div></li><li><p class="profilePic"><img src="contestwb_files/1.gif"></p><div class="profileDetail"><div class="top"><span class="name">kane_chin</span></div><p>I love Watertown because great</p></div></li><li><p class="profilePic"><img src="contestwb_files/1.gif"></p><div class="profileDetail"><div class="top"><span class="name">kane_chin</span></div><p>I love Watertown because work please</p></div></li><li><p class="profilePic"><img src="contestwb_files/1.gif"></p><div class="profileDetail"><div class="top"><span class="name">kane_chin</span></div><p>I love Watertown because this is a new feed</p></div></li><li><p class="profilePic"><img src="contestwb_files/1.gif"></p><div class="profileDetail"><div class="top"><span class="name">kane_chin</span></div><p>I love Watertown because sdfasfasf</p></div></li><li><p class="profilePic"><img src="contestwb_files/1.gif"></p><div class="profileDetail"><div class="top"><span class="name">kane_chin</span></div><p>I love Watertown because sldfjaslfjaslfjsaf</p></div></li></ul>
+
+			<div id="infoBox">
+				<div id="infoBoxContent">
+					<form id="hidden-submit" action="http://app.ilovewatertown.com.sg/wpost" method="post">
+					<input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" style="display: none;" name="wpost[content]" id="contentMessage" type="text">
+					<label for="name">姓名:</label>
+					<input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" name="wpost[name]" id="username" placeholder="姓名" type="text">
+					<label class="ui-input-text" for="nric">身分证号码:</label>
+					<input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" name="wpost[nric]" id="nric" placeholder="身分证号码" type="text">
+					<label class="ui-input-text" for="contact">联系号码:</label>
+					<input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" name="wpost[contact]" id="contact" placeholder="联系号码" type="text">
+					<div class="ui-checkbox"><input name="checkbox-1" id="checkbox-0" class="custom" type="checkbox"><label class="ui-btn ui-btn-up-c ui-btn-icon-left ui-btn-corner-all ui-checkbox-off" data-theme="c" for="checkbox-0"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">我同意以下 <a class="ui-link" id="term" href="#">条款及条件</a></span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow"></span></span></label></div>
+					<a class="ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" href="#infoBox" id="submit-info" data-role="button"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">提交</span></span></a>
+					<a class="ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" href="#infoBox" id="cancel-info" data-role="button"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">取消</span></span></a>
+					</form>
+
+					<div id="termBox">
+						<h2>Terms and Conditions governing the I love Watertown Contest on Facebook and Weibo</h2> <a class="ui-link" id="closeTerm" href="#">Close</a>
+						<span>This contest is wholly sponsored by Far East Organization 
+Pte Ltd. Apple Inc is neither a sponsor nor involved in this contest, 
+its prizes, its rules, and its terms and condition in any way.<br>Prizes
+A total of two iPad 2(s) to be won by 2 winners during the Promotional 
+Period  between 17 January 2012 00:00 hrs to 29th February 2012. 23:59 
+hrs (SG time).
+Terms and Conditions
+The I love Watertown Contest on Facebook and Weibo is open to all 
+(except employees of Far East Property Sales Pte Ltd (“Far East”) and/or
+ any advertising or web agencies who are directly connected with this 
+contest who shall not be eligible to participate in this contest).
+
+To participate in the contest on Facebook, participant(s) are required 
+to “Like” Watertown Facebook Page 
+(http://www.facebook.com/WatertownPunggol) then creatively complete the 
+sentence “I love Watertown because…” The entry will be posted on both 
+the participant(s)’s wall and the Watertown Facebook page. 
+Participant(s) will need to get as many friends and Facebook users as 
+possible, to “Like” his/her entry on the Watertown Facebook page at 
+http://www.facebook.com/WatertownPunggol  between 17 January 2012 00:00 
+hrs to 29th February 2012. 23:59 hrs (SG time). The entry with the most 
+“Likes” wins an iPad 2. 
+
+To participate in the contest on Weibo, participant(s) are required to 
+“Follow” FEO corporate account in Weibo (http://weibo.com/2641107004) 
+then creatively complete the sentence “我爱水之都因为….” This message will be 
+reflected on both the participant(s)’ Weibo page and also FEO corporate 
+account page on Weibo. Participant(s) will need to get as many friends 
+and Weibo users as possible, to “retweet” the message between 17 January
+ 2012 00:00 hrs to 29th February 2012. 23:59 hrs (SG time). The 
+participant with the most “retweets” win an iPad 2.
+
+Participant(s) are eligible to participate in only 1 contest, either on 
+Facebook or Weibo. Far East reserves the right to disqualify any entry 
+that does not comply with the eligibility criteria.
+
+Anyone who has committed any act or made any statement or behaved in any
+ manner, which may, in Far East Property's sole discretion, bring into 
+disrepute Far East’s name or reputation, will not be eligible to 
+participate in this contest.
+
+Ineligible participants shall be disqualified from participation, 
+irrespective of whether they had already submitted their entry or 
+otherwise.
+
+Only 1 prize per participant (NRIC/Passport) will be awarded based on 
+the eligibility criteria.
+
+Winner(s) will be announced on Watertown Facebook Page   
+(http://www.facebook.com/WatertownPunggol) and the FEO corporate account
+ on Weibo on 7 March 2012, 12:00 hrs (SG time).
+
+Winner(s) are to collect their prize(s) personally either at the 
+Watertown sales gallery in Singapore or Far East Property Sales office 
+in China.  Far East may arrange for prize(s) to be couriered to winners 
+under special circumstances. Failure to collect the prize within the 
+time or in the manner stated may result in disqualification and 
+selection of an alternate winner(s).
+
+Prize(s) are non-transferable, non-exchangeable and subject to the terms
+ and conditions accompanying them (if any). Far East reserves the right 
+to substitute the prize(s) with any other item of similar value at any 
+time without notice or reason. 
+
+If Far East subsequently determines that a person is not eligible for 
+the prize, for any reason whatsoever, Far East may at its’ discretion 
+reclaim the prize and award it to such person(s) or deal with it in any 
+manner as it deems fit.
+
+Far East shall not assume any responsibility or liability for (i) any 
+incorrect or inaccurate entry form information or (ii) any technical 
+malfunction, failure, error, omission, interruption, deletion, defect, 
+delay in operation or communications line failure, regardless of cause, 
+with regard to any systems, networks, lines, satellites, servers, 
+computers or providers utilized in any aspect of the submission of an 
+entry or operation of the contest, (iii) inaccessibility or 
+unavailability of the internet or (iv) the quality, merchantability or 
+the fitness for any purpose or any other aspect of the prize(s) or (v)  
+any defect or malfunction in any prize and/or (vi) any loss, injury, 
+damage or harm to persons or property associated or sustained in 
+connection with the participation in any and all aspects of the contest,
+ including accessing the contest, submitting an entry, the receipt, 
+ownership or use of any prize by any person.  Each prize winner bears 
+all risk of loss or damage to his or applicable prize after it has been 
+delivered.
+
+Far East’s decision on all matters relating to this contest shall be 
+final and Far East shall not be obliged to enter into any correspondence
+ with any participant on any matter relating to this contest.
+
+Far East may at any time discontinue this contest, vary any of these 
+Terms and Conditions, disqualify any participant and/or withdraw any 
+award without notice or reason.
+
+Far East reserves the right to publish the names of people who have 
+redeemed the prizes and other necessary details for the purpose of 
+announcing the names of people who have redeemed the prizes on the Far 
+East Organization website.
+
+Entry into this contest constitutes the participant’s acceptance of 
+these Terms and Conditions.
+
+These Terms and Conditions shall be governed by Singapore laws and 
+participants shall submit to the exclusive jurisdiction of Singapore 
+courts.
+
+Participants shoule be at least 13 years old toenter into this Contest</span>
+					</div>
+				</div>
+				
+			</div> 
+		</div> 
+	</div>
+
+
+
+
+<div style="top: 416.5px;" class="ui-loader ui-body-a ui-corner-all"><span class="ui-icon ui-icon-loading spin"></span><h1>loading</h1></div></body></html>

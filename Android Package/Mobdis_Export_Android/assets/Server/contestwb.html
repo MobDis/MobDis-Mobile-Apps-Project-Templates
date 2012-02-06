@@ -1,282 +1,86 @@
-<!DOCTYPE html>
-<html class="no-js ui-mobile" lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- base href="http://ilovewatertown.com.sg/contestwb.html" -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
-	<title>Watertown</title>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="stylesheet" href="contestwb_files/style.css">
-	<link rel="stylesheet" href="contestwb_files/jquery.css">
-	<link rel="stylesheet" type="text/css" href="css/layout.css">
-	<script src="contestwb_files/jquery-1.js"></script>
-	<script src="contestwb_files/jquery.js"></script>
-	<style id="less:css-layout" media="screen" type="text/css">.ui-navbar .ui-btn {
-  height: 41px;
-}
-.ui-navbar .ui-btn span {
-  border: none;
-  padding: 0 !important;
-}
-.ui-navbar img {
-  height: 100%;
-}
-.ui-header h1 {
-  padding: 0 !important;
-  margin: 0 !important;
-  height: 37px;
-}
-.ui-header h1 img {
-  width: 100%;
-}
-.table {
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-.tablecell {
-  display: table-cell;
-  vertical-align: middle;
-}
-#lang .bg {
-  height: 100%;
-}
-#lang .ui-content {
-  position: relative;
-  height: 417px;
-}
-#lang #langSelect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-#lang #langSelect .tablecell-wrapper {
-  margin: 0 auto;
-  width: 235px;
-}
-#lang #langSelect .tablecell-wrapper img {
-  width: 100%;
-}
-#lang #langSelect #engLang {
-  background: url('http://ilovewatertown.com.sg/css/../images/splash/bt_eng.png') no-repeat;
-}
-#lang #langSelect #chiLang {
-  background: url('http://ilovewatertown.com.sg/css/../images/splash/bt_chi.png') no-repeat;
-}
-#lang #langSelect .langStyle {
-  width: 117px;
-  height: 101px;
-  background-size: 100% 200%;
-  float: left;
-}
-#contestPage #content {
-  position: relative;
-}
-#contestPage #content h2 {
-  color: #35467a;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-#contestPage #content ul {
-  list-style: none;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin: 25px 0 0;
-}
-#contestPage #content li {
-  overflow: hidden;
-  border-bottom: 1px solid grey;
-  padding: 5px 5px 10px;
-}
-#contestPage #content li:last-child {
-  border: none;
-}
-#contestPage #content textarea {
-  background: white;
-}
-#contestPage #content .ui-btn {
-  margin-right: 0;
-  margin-left: 0;
-  margin-top: 0.8em;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #02a7de), color-stop(1, #04c9ff));
-}
-#contestPage #content .ui-btn span {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-}
-#contestPage #content #cancel-info {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #9a9a9a), color-stop(1, #c5c3c3));
-}
-#contestPage #content .profilePic {
-  width: 50px;
-  float: left;
-  margin-right: 5px;
-}
-#contestPage #content .profilePic img {
-  width: 100%;
-}
-#contestPage #content .profileDetail {
-  padding-left: 55px;
-}
-#contestPage #content .profileDetail .name {
-  font-weight: bold;
-}
-#contestPage #content .profileDetail .like {
-  float: right;
-}
-#contestPage #content .profileDetail .like span {
-  background: url('http://ilovewatertown.com.sg/css/../images/like.png') no-repeat;
-  text-indent: -99999px;
-  height: 15px;
-  width: 15px;
-  display: inline-block;
-  background-size: 15px 15px;
-}
-#contestPage #content #infoBox {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-#contestPage #content #infoBox #infoBoxContent {
-  position: absolute;
-  top: 40px;
-  left: 10px;
-  right: 10px;
-  z-index: 99999;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  border-radius: 10px;
-}
-#contestPage #content #infoBox label {
-  color: white;
-  text-shadow: 0 -1px 0 black;
-  margin-left: 10px;
-  font-weight: bold;
-}
-#contestPage #content #infoBox input {
-  margin-bottom: 10px;
-  width: 90%;
-  margin: 0 auto 10px;
-}
-#contestPage #content #infoBox .ui-btn {
-  margin: 20px auto 10px;
-  border: none;
-  width: 95%;
-}
-#contestPage #content #infoBox #cancel-info {
-  margin-top: 0px;
-}
-#contestPage #content .ui-checkbox #checkbox-0 {
-  opacity: 0;
-}
-#contestPage #content .ui-checkbox .ui-btn {
-  background: none;
-}
-#contestPage #content .ui-checkbox .ui-btn-inner {
-  border: none;
-  box-shadow: none;
-}
-#contestPage #content .ui-checkbox label {
-  margin: 0;
-}
-#contestPage #content .ui-icon-checkbox-off {
-  background: white;
-}
-#contestPage #content #termBox {
-  display: none;
-  color: #fff;
-  text-shadow: 0 -1px 0 #000000;
-}
-#contestPage #content #termBox h2 {
-  float: left;
-}
-#contestPage #content #termBox #closeTerm {
-  float: right;
-  color: white;
-}
-#contestPage #content #termBox span {
-  display: block;
-  margin-top: 20px;
-  clear: both;
-}
-</style>
-	<script src="contestwb_files/jsr_class.js"></script>
-	<script src="contestwb_files/common.js"></script>
-	<script type="text/javascript">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>Watertown</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" />
+  <link rel="stylesheet/less" type="text/css" href="css/layout.less">
+  <script src="js/libs/jquery-1.6.4.min.js"></script>
+  <script src="js/libs/jquery.mobile-1.0.min.js"></script>
+  <script src="js/libs/less-1.1.3.min.js"></script>
+  <script src="js/jsr_class.js"></script>
+  <script src="js/common.js"></script>
+  <script type='text/javascript'>
 
-	var app = appObj();
+  var app = appObj();
 
-	function bork(data)
-	{
-	  var str = "";
-	  for(var i = 0; i < data.length;i++){
-	  	str += '<li>'+
-				'<p class="profilePic"><img src="'+data[i].avatar+'"/></p>'+
-				'<div class="profileDetail"><div class="top"><span class="name">'+data[i].name+'</span></div><p>'+data[i].message+'</p></div>' +
-			  '</li>';
-		
-	  };
-	  $('#contestPage ul').html(str);
-	}//end bork
+  function bork(data)
+  {
+    var str = "";
+    for(var i = 0; i < data.length;i++){
+      str += '<li>'+
+        '<p class="profilePic"><img src="'+data[i].avatar+'"/></p>'+
+        '<div class="profileDetail"><div class="top"><span class="name">'+data[i].name+'</span></div><p>'+data[i].message+'</p></div>' +
+        '</li>';
+    
+    };
+    $('#contestPage ul').html(str);
+  }//end bork
 
-	$('#contestPage').live('pageinit',function(){
-		app.loadEvents();
+  $('#contestPage').live('pageinit',function(){
+    app.loadEvents();
 
-		addScript('http://app.ilovewatertown.com.sg/wpost');
-	})
-	</script>
+    addScript('http://app.ilovewatertown.com.sg/wpost');
+  })
+  </script>
 
-<script id="YJscriptId1" src="contestwb_files/wpost.html" type="text/javascript"></script></head>
-<body class="ui-mobile-viewport">
-	<div style="min-height: 833px;" tabindex="0" data-url="contestPage" id="contestPage" data-role="page" class="ui-page-active ui-page ui-body-c"> 
-		<div role="main" class="ui-content" id="content" data-role="content">
-						<h2>我爱水之都，因为…</h2>
-			<textarea class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" placeholder="请输入句子...."></textarea>
-			<a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-c" data-theme="c" href="#infoBox" id="submit-message" data-role="button"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">提交</span></span></a>
+</head>
+<body>
+  <div id="contestPage" data-role="page" class="ui-page-active"> 
+    <div id="content" data-role="content">
+      <h2>我爱水之都，因为…</h2>
+      <textarea class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" placeholder="请输入句子...."></textarea>
+      <a class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-c" data-theme="c" href="#infoBox" id="submit-message" data-role="button"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">提交</span></span></a>
             <h3>告诉我们您为什么喜欢“水之都”这个项目，将有机会赢取全新IPAD 2！</h3><br>
-			<h3>活动规则：
+      <h3>活动规则：
             <p>1)      发挥创意，完成“我爱水之都，因为____”，将您的创意上传至微博并@新加坡远东房产销售
-			</p><p>2)      成为@新加坡远东房产销售的粉丝 
-			</p><p>3)      快快通知您的朋友，让他们转发您的这条创意微博，被转发次数最多的微博用户将赢取一台IPAD 2</p></h3><br>
+      </p><p>2)      成为@新加坡远东房产销售的粉丝 
+      </p><p>3)      快快通知您的朋友，让他们转发您的这条创意微博，被转发次数最多的微博用户将赢取一台IPAD 2</p></h3><br>
 
-			<h3>温馨提醒：上传您创意时记得要@新加坡远东房产销售哦，这样我们才知道您参与了我们此次活动
+      <h3>温馨提醒：上传您创意时记得要@新加坡远东房产销售哦，这样我们才知道您参与了我们此次活动
 
 *附带条件条款</h3>
-			<ul>
+      <ul>
             </ul>
 
-			<div id="infoBox">
-				<div id="infoBoxContent">
-					<form id="hidden-submit" action="http://app.ilovewatertown.com.sg/wpost" method="post">
-					<input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" style="display: none;" name="wpost[content]" id="contentMessage" type="text">
-					<label for="name">姓名:</label>
-					<input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" name="wpost[name]" id="username" placeholder="姓名" type="text">
-					<label class="ui-input-text" for="nric">身分证号码:</label>
-					<input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" name="wpost[nric]" id="nric" placeholder="身分证号码" type="text">
-					<label class="ui-input-text" for="contact">联系号码:</label>
-					<input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" name="wpost[contact]" id="contact" placeholder="联系号码" type="text">
-					<div class="ui-checkbox"><input name="checkbox-1" id="checkbox-0" class="custom" type="checkbox"><label class="ui-btn ui-btn-up-c ui-btn-icon-left ui-btn-corner-all ui-checkbox-off" data-theme="c" for="checkbox-0"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">我同意以下 <a class="ui-link" id="term" href="#">条款及条件</a></span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow"></span></span></label></div>
-					<a class="ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" href="#infoBox" id="submit-info" data-role="button"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">提交</span></span></a>
-					<a class="ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" href="#infoBox" id="cancel-info" data-role="button"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">取消</span></span></a>
-					</form>
+      <div id="infoBox">
+        <div id="infoBoxContent">
+          <form id="hidden-submit" action="http://app.ilovewatertown.com.sg/wpost" method="post">
+          <input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" style="display: none;" name="wpost[content]" id="contentMessage" type="text">
+          <label for="name">姓名:</label>
+          <input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" name="wpost[name]" id="username" placeholder="姓名" type="text">
+          <label class="ui-input-text" for="nric">身分证号码:</label>
+          <input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" name="wpost[nric]" id="nric" placeholder="身分证号码" type="text">
+          <label class="ui-input-text" for="contact">联系号码:</label>
+          <input class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" name="wpost[contact]" id="contact" placeholder="联系号码" type="text">
+          <input type="checkbox" name="checkbox-1" id="checkbox-0" class="custom" /><label for="checkbox-0">我同意以下<a id="term" href="#">条款及条件</a></label>
+          <a class="ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" href="#infoBox" id="submit-info" data-role="button"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">提交</span></span></a>
+          <a class="ui-btn ui-btn-up-c ui-btn-corner-all ui-shadow" data-theme="c" href="#infoBox" id="cancel-info" data-role="button"><span aria-hidden="true" class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">取消</span></span></a>
+          </form>
 
-					<div id="termBox">
-						<h2>关于使用面簿（Facebook）和微博举办“我爱水之都”竞赛活动的条款</h2> <a id="closeTerm" href="#">关闭</a>
-						<span>This contest is wholly sponsored by Far East Organization Pte Ltd. Apple Inc is neither a sponsor nor involved in this contest, its prizes, its rules, and its terms and condition in any way.本次大赛由远东机构全资赞助。苹果公司与本次大赛，奖品，它的规则，其条款及条件并无任何关系。<br>奖品
+          <div id="loadFB" style="display:none;font-size:20px;color:white;text-shadow:none;text-align:center;font-weight:bold;">
+            <p>Submitting to Facebook...</p>
+          </div>
+
+          <div id="termBox">
+            <h2>关于使用面簿（Facebook）和微博举办“我爱水之都”竞赛活动的条款</h2> <a id="closeTerm" href="#">关闭</a>
+            <span>This contest is wholly sponsored by Far East Organization Pte Ltd. Apple Inc is neither a sponsor nor involved in this contest, its prizes, its rules, and its terms and condition in any way.本次大赛由远东机构全资赞助。苹果公司与本次大赛，奖品，它的规则，其条款及条件并无任何关系。<br>奖品
 2012年1月16日00:00时至2012年2月29日23:59（新加坡时间），水之都将在面簿（Facebook）和微博上开展促销活动，并在以上两个平台各产生一名获奖者，奖品为iPad 2各一台。
 参赛条款和条件
 <br>除远东物业销售私人有限公司（以下简称“远东公司”）和／或与本次竞赛直接相关的广告或网上服务机构的员工之外，任何人均可参加在面簿（Facebook）和微博上举行的“我爱水之都”竞赛活动。
@@ -314,14 +118,13 @@
 上述条款均适用新加坡法律。所有参加者均受新加坡法院的排他性司法管辖。
 </span>
 
-					</div>
-				</div>
-				
-			</div> 
-		</div> 
-	</div>
+          </div>
+        </div>
+        
+      </div> 
+  </div>
 
 
 
-
-<div style="top: 416.5px;" class="ui-loader ui-body-a ui-corner-all"><span class="ui-icon ui-icon-loading spin"></span><h1>loading</h1></div></body></html>
+</body>
+</html>

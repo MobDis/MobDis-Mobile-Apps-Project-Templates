@@ -41,6 +41,8 @@
 			},
 			submitInfo: function(){
 				if($('#username').val().length && $('#nric').val().length && $('#contact').val().length && $('#contact').val().length && $('#checkbox-0').attr('checked')){
+					$('#infoBoxContent form').css('display','none');
+					$('#loadFB').css('display','block');
 					$('#hidden-submit').submit();
 				}
 				else {

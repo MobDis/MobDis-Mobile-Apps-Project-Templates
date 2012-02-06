@@ -6635,6 +6635,7 @@ jQuery.widget( "mobile.scrollview", jQuery.mobile.widget, {
 		this._timerCB = function(){ self._handleMomentumScroll(); };
 	
 		this._addBehaviors();
+		myscrollview = this;
 	},
 
 	_startMScroll: function(speedX, speedY)
@@ -6723,6 +6724,8 @@ jQuery.widget( "mobile.scrollview", jQuery.mobile.widget, {
 
 	_setScrollPosition: function(x, y)
 	{
+		lastX = x;
+		lastY = y;
 		this._sx = x;
 		this._sy = y;
 
